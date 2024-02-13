@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header className={s.wrap}>
       <h1 className={s.title}>Search</h1>
-      <input placeholder="write name, tag, email..." type="text" className={s.input} />
+      <input placeholder="Write name, tag, email..." type="text" className={s.input} />
       <nav className={s.nav}>
         <ul className={s.list}>
           <li className={s.list_item}>All</li>
