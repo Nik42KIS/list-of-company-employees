@@ -16,18 +16,21 @@ export const ListOfEmployers = () => {
   }, [users]);
 
   return (
-    <ul>
+    <ul className={s.list}>
       {users.map((user) => {
         return (
-          <li key={user.id}>
-            <img src={user.avatarUrl} alt="" />
-            <div>
-              <span>
-                {user.firstName} {user.lastName}
+          <li className={s.item} key={user.id}>
+            <img className={s.avatar} src={user.avatarUrl} alt="" />
+            <div className={s.info}>
+              <span className={s.name}>
+                <span>
+                  {user.firstName} {user.lastName}
+                </span>
+                <span className={s.tag}>{user.userTag}</span>
               </span>
-              <span>
+              <div>
               {user.department}
-              </span>
+              </div>
             </div>
           </li>
         );

@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Header.module.css';
+import s from './Header.module.scss';
 import FILTER_IMG from "../../assets/icons/filter.png"
 export const Header = () => {
   return (
