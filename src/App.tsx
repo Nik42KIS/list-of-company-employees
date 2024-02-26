@@ -1,12 +1,12 @@
 import './App.css';
 import { Header } from './components/Header/Header';
-import { ListItem } from './components/ListItem/ListItem';
+import { ListOfEmployers } from './components/ListItem/ListOfEmployers';
 
 function App() {
   return (
     <>
       <Header />
-      <ListItem />
+      <ListOfEmployers />
     </>
   );
 }
