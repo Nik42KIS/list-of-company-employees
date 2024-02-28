@@ -1,6 +1,7 @@
-import React from 'react';
+
 import s from './Header.module.scss';
 import FILTER_IMG from "../../assets/icons/filter.png"
+
 export const Header = () => {
   return (
     <header className={s.wrap}>
@@ -11,14 +12,12 @@ export const Header = () => {
       </div>
       <nav className={s.nav}>
         <ul className={s.list}>
-          <li className={s.list_item}>
-            All 
-            </li>
-          <li className={s.list_item}>Designers</li>
-          <li className={s.list_item}>Analysts</li>
-          <li className={s.list_item}>Managers</li>
-          <li className={s.list_item}>iOS</li>
-          <li className={s.list_item}>Android</li>
+          <li className={`${s.list_item} ${s.active}`}><a href="#">All</a></li>   
+          <li className={s.list_item}><a href="#">Designers</a></li>
+          <li className={s.list_item}><a href="#">Analysts</a></li>
+          <li className={s.list_item}><a href="#">Managers</a></li>
+          <li className={s.list_item}><a href="#">iOS</a></li>
+          <li className={s.list_item}><a href="#">Android</a></li>
         </ul>
       </nav>
     </header>
