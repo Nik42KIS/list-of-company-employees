@@ -15,7 +15,7 @@ export const ListOfEmployers = () => {
     getEmployersList(
       'https://stoplight.io/mocks/kode-frontend-team/koder-stoplight/86566464/users?__example=all',
     );
-  }, [users]);
+  }, []);
 
   return (
     <ul className={s.list}>
