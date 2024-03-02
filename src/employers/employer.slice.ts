@@ -8,12 +8,7 @@ const initialState = {
 export const employersSlice = createSlice({
   name: 'employers',
   initialState,
-  reducers: {
-    // getEmployers: (state, { payload }) => {
-    //   console.log(payload);
-    //   state = state.employers.concat(payload);
-    
-    },
+  reducers: {},
   extraReducers: builder => {
     builder
     .addCase(getEmployersList.fulfilled, (state, action) =>{
